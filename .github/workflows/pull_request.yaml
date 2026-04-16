@@ -1,0 +1,11 @@
+name: pull-request-workflow
+on: pull_request
+
+jobs:
+  push-job:
+    run-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo 안녕
+      - name: step2
+        run: echo 잘가
