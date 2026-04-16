@@ -1,9 +1,10 @@
-name : push-workflow
-on : push
+name: push-workflow # 워크플로우 식별자
+on: push # 어떤 이벤트에 트리거 할지
 
+# 트리거 됬을떄 어떤 잡을 실행할지
 jobs:
   push-job:
-    runs-on: ubuntu-lastest
-    steps:
-      - name : step1
-        run: echo hello world
+    runs-on: ubuntu-lastest # 어떤 머신 위에서 실행할지
+    steps: # 실행시킬 잡 순서
+      - name: step1
+        run: echo hello github action!!!
