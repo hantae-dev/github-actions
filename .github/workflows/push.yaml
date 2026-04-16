@@ -10,3 +10,5 @@ jobs:
         run: echo hello github action!!!!
       - name: step2
         run: echo 안녕~
+      - name: 세번째
+        run: ~~
