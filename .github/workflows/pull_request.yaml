@@ -3,7 +3,7 @@ on: pull_request
 
 jobs:
   push-request-job:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: step1
         run: echo 안녕
