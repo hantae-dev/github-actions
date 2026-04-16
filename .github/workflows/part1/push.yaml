@@ -1,4 +1,4 @@
-name: push-workflow1 # 워크플로우 식별자
+name: push-workflow2# 워크플로우 식별자
 on: push # 어떤 이벤트에 트리거 할지
 
 # 트리거 됬을떄 어떤 잡을 실행할지
