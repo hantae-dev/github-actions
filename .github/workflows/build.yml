@@ -1,0 +1,24 @@
+name: Build and Test
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 코드 체크아웃
+      - uses: actions/checkout@v3
+
+      # 2. Node.js 세팅
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      # 3. 의존성 설치 (npm registry 장애 시 여기서 실패)
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. 테스트 실행
+      - name: Run tests
+        run: npm test
