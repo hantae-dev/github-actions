@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       prefix:
-        description: "set repo prefix"
+        description: "set repo prefix!"
         required: true
         default: "service"
         type: choice
@@ -11,7 +11,7 @@ on:
           - example
           - service
       name:
-        description: "set repo name"
+        description: "set repo name!"
         required: true
         default: "github-actions"
         type: string
